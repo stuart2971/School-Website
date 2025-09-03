@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind Boilerplate</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ASPOrange: "#F76901",
+            ASPBlue: "#304A6D"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="px-20 py-12">
+  <div class="w-full px-4 flex justify-between items-center">
+    <div>
+    <h1 class="text-4xl font-bold text-ASPOrange">AMERICAN STEM PREP</h1></div>
+    <div>
+<ul class="flex justify-between space-x-8 text-lg text-ASPBlue font-light">
+    <li class="cursor-pointer hover:text-orange-300">Home</li>
+    <li class="cursor-pointer hover:text-orange-300">Programs</li>
+    <li class="cursor-pointer hover:text-orange-300">About</li>
+    <li class="cursor-pointer hover:text-orange-300">News</li>
+    <li class="cursor-pointer hover:text-orange-300">Contact</li>
+  </ul>
+    </div>
+    <div>
+      <button class="hover:bg-ASPOrange hover:text-white p-1 px-3 rounded">Parent Portal</button>
+      <button class="bg-ASPBlue text-white p-1 px-3 rounded">Apply Now</button>
+    </div>
+    
+  </div>
+
+  
+</body>
+</html>

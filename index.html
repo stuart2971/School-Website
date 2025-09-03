@@ -36,8 +36,27 @@
       <button class="hover:bg-ASPOrange hover:text-white p-1 px-3 rounded">Parent Portal</button>
       <button class="bg-ASPBlue text-white p-1 px-3 rounded">Apply Now</button>
     </div>
-    
   </div>
+
+  <div id="Home"></div>
+  <div id="Programs"></div>
+  <div id="About"></div>
+  <div id="News"></div>
+  <div id="Contact"></div>
+
+  <script>
+    async function loadHTML(id, file) {
+      const response = await fetch(file);
+      const text = await response.text();
+      document.getElementById(id).innerHTML = text;
+    }
+
+    loadHTML("Home", "Sections/Home.html");
+    loadHTML("Programs", "Sections/Programs.html");
+    loadHTML("About", "Sections/About.html");
+    loadHTML("News", "Sections/News.html");
+    loadHTML("Contact", "Sections/Contact.html");
+  </script>
 
   
 </body>

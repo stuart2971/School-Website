@@ -1,0 +1,92 @@
+  <h1 style="text-align:center;">Contact Us</h1>
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .layout {
+      display: flex;       /* 왼쪽-오른쪽 배치 */
+      gap: 20px;           /* 간격 */
+      max-width: 1000px;   /* 전체 폭 */
+      margin: 0 auto;      /* 가운데 정렬 */
+    }
+
+    .big-box {
+      flex: 2;                 /* 왼쪽 큰 박스 → 넓게 */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .small-boxes {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2열 */
+      gap: 20px;
+      justify-items: center; /* 가로 중앙 */
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 16px;
+      text-align: center;
+
+      /* 정사각형 크기 */
+      width: 150px;
+      height: 150px;
+
+      display: flex;     /* 안쪽 내용 가운데 정렬 */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Contact Us</h1>
+
+  <div class="layout">
+    <!-- 왼쪽 큰 박스 -->
+    <div class="big-box">
+      <h2>Send us a Message</h2>
+      <p>First Name: ________</p>
+      <p>Last Name: ________</p>
+      <p>Email: ________</p>
+      <p>Message: __________</p>
+    </div>
+
+    <!-- 오른쪽 정사각형 박스 4개 -->
+    <div class="small-boxes">
+      <div class="box">
+        <h2>Address</h2>
+        <p>123 Innovation<br>Tech Valley</p>
+      </div>
+
+      <div class="box">
+        <h2>Phone</h2>
+        <p>(555) 123-4567</p>
+      </div>
+
+      <div class="box">
+        <h2>Email</h2>
+        <p>info@example.com</p>
+      </div>
+
+      <div class="box">
+        <h2>Hours</h2>
+        <p>Mon-Fri<br>7:30 AM – 5:00 PM</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!-- This is a change -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .layout {
+      display: flex;       /* 왼쪽-오른쪽 배치 */
+      gap: 20px;           /* 간격 */
+      max-width: 1000px;   /* 전체 폭 */
+      margin: 0 auto;      /* 가운데 정렬 */
+    }
+
+    .big-box {
+      flex: 2;                 /* 큰 박스 → 오른쪽보다 넓게 */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .small-boxes {
+      flex: 1;                 /* 작은 박스 영역 */
+      display: grid;            /* 2x2 그리드 */
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Contact Us</h1>
+
+  <div class="layout">
+    <!-- 왼쪽 큰 박스 -->
+    <div class="big-box">
+      <h2>Send us a Message</h2>
+      <p>First Name: ________</p>
+      <p>Last Name: ________</p>
+      <p>Email: ________</p>
+      <p>Message: __________</p>
+    </div>
+    <div class="small-boxes">
+      <div class="box">
+        <h2>Address</h2>
+        <p>Elem : 91, Poeun-daero, Suji-gu, Yongin-si, Gyeonggi-do, 16863<br>M.H : 15, Dongcheon-ro 178beon-gil, Suji-gu, Yongin-si, 16802</p>
+      </div>
+
+      <div class="box">
+        <h2>Phone</h2>
+        <p>M.H: 031-214-1130<br>Elem: 031-212-9117</p>
+      </div>
+
+      <div class="box">
+        <h2>Email</h2>
+        <p>Elem: admin@astemprep.org<br>M.H: admin.mh@astemprep.org</p>
+      </div>
+
+      <div class="box">
+        <h2>Office Hours</h2>
+        <p>Mon-Fri: 8:35 AM – 4:10 PM</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
